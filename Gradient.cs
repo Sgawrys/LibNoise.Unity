@@ -172,14 +172,14 @@ namespace LibNoise.Unity
             get { return Gradient._terrain; }
         }
 		
-		/// <summary>
-		/// Gets the custom instance of Gradient so that you can
-		/// add whatever colors you want to it.
-		/// </summary>
-		public static Gradient Custom
-		{
-			get { return Gradient._custom; }
-		}
+        /// <summary>
+        /// Gets the custom instance of Gradient so that you can
+        /// add whatever colors you want to it.
+        /// </summary>
+        public static Gradient Custom
+        {
+            get { return Gradient._custom; }
+        }
 
         #endregion
 
