@@ -23,7 +23,7 @@ namespace LibNoise.Unity
         private static Gradient _empty;
         private static Gradient _terrain;
         private static Gradient _grayscale;
-		private static Gradient _custom;
+        private static Gradient _custom;
 
         #endregion
 
@@ -54,8 +54,8 @@ namespace LibNoise.Unity
             Gradient._empty.m_data.Add(new KeyValuePair<double, Color>(1.0, Color.clear));
             Gradient._empty.m_inverted = false;
 			
-			Gradient._custom.m_data = new List<KeyValuePair<double, Color>>();
-			Gradient._custom.m_inverted = false;
+            Gradient._custom.m_data = new List<KeyValuePair<double, Color>>();
+            Gradient._custom.m_inverted = false;
         }
 
         /// <summary>
@@ -195,18 +195,18 @@ namespace LibNoise.Unity
             this.m_data.Add(new KeyValuePair<double, Color>(1.0, Color.clear));
         }
 		
-		public void EmptyGradient()
-		{
-			this.m_data.Clear();
-		}
+        public void EmptyGradient()
+        {
+            this.m_data.Clear();
+        }
 		
-		/// <summary>
-		/// Allows access to add own definied ranges with colors to underlying Gradient.
-		/// </summary>
-		public void AddToGradient(double range, Color color)
-		{
-			this.m_data.Add(new KeyValuePair<double, Color>(range, color));
-		}
+        /// <summary>
+        /// Allows access to add own definied ranges with colors to underlying Gradient.
+        /// </summary>
+        public void AddToGradient(double range, Color color)
+        {
+            this.m_data.Add(new KeyValuePair<double, Color>(range, color));
+        }
 		
 
         /// <summary>
